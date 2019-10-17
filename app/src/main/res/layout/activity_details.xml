@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Activity_Details">
+
+    <ImageView
+        android:id="@+id/imgView_plant"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_margin="15dp"
+        android:scaleType="centerCrop"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#141414"
+        android:textSize="18sp"
+        />
+
+
+</LinearLayout>
+</ScrollView>

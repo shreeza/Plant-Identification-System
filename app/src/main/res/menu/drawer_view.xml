@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">//select only one menu item
+        <item
+            android:id="@+id/opt_search"
+            android:icon="@drawable/ic_search"
+            android:title="@string/searchButton" />
+        <!--<item-->
+            <!--android:id="@+id/nav_gallery"-->
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+            <!--android:title="@string/gallery" />-->
+        <item
+            android:id="@+id/nav_con"
+            android:icon="@drawable/ic_contacts"
+            android:title="@string/abt" />
+</group>
+
+</menu>

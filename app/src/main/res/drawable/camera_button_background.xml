@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient android:startColor="@color/about_youtube_color" android:endColor="@color/primary_light" android:angle="45"/>
+
+</shape>

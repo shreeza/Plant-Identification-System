@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+
+    tools:context=".MainActivity"
+
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/button"
+
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+
+
+        android:src="@drawable/ic_action_camera"
+        android:padding="16dp"
+        android:background="@drawable/camera_button_background"
+
+
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/content_frame"
+
+        />
+
+
+
+
+
+
+
+
+
+
+        <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ToolBarStyle"
+                android:background="@color/lightgrey">
+
+            </android.support.v7.widget.Toolbar>
+
+
+
+        </FrameLayout>
+
+        <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+
+
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/drawer_view" />
+</android.support.v4.widget.DrawerLayout>
